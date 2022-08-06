@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import { baseUrl } from '@/lib/global';
 const Seo = dynamic(() => import('/components/elements/seo'));
 const FeatureRowsGroup = dynamic(() =>
 	import('/components/sections/feature-rows-group')
@@ -40,7 +41,7 @@ const metadata = {
 		size: 38.52,
 		width: 575,
 		height: 424,
-		url: `${process.env.NEXT_PUBLIC_BASE_URL}/images/logomarca-bragheto.webp`
+		url: `${baseUrl}/images/logomarca-bragheto.webp`
 	}
 };
 

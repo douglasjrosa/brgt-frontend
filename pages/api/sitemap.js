@@ -1,5 +1,4 @@
 import { SitemapStream, streamToPromise } from 'sitemap';
-import { getStrapiURL } from 'utils/api';
 
 export default async (req, res) => {
 	try {
@@ -8,8 +7,7 @@ export default async (req, res) => {
 			cacheTime: 600000
 		});
 
-		// Get all pages from Strapi
-		const pages = await (await fetch(getStrapiURL('/pages'))).json();
+		const pages = ["", "empresa", "produtos", "informacoes", "contato"];
 
 		const slugExceptions = ['teste', 'images'];
 
