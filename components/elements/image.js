@@ -1,8 +1,7 @@
 import NextImage from 'next/image';
-import { baseUrl } from 'data/global';
 
 const customLoader = ({ src, width, quality }) => {
-	return `${baseUrl}/images/${src}?w=${Math.min(width, 1080)}&q=${quality || 75}`;
+	return `/images/${src}?w=${Math.min(width, 1080)}&q=${quality || 75}`;
 };
 
 const Image = (props) => {
