@@ -10,8 +10,8 @@ const MobileNavMenu = ({ navbar, closeSelf }) => {
   useLockBodyScroll();
 
   return (
-    <div className="w-screen h-screen fixed top-0 left-0 overflow-y-scroll bg-white z-10 pb-6">
-      <div className="container h-full flex flex-col justify-between">
+    <div className="fixed top-0 right-4 rounded-2xl overflow-y-scroll bg-black bg-opacity-90 border-yellow-500 border-4 text-white z-10 pb-6 px-6">
+      <div className="container flex flex-col justify-between">
         {/* Top section */}
         <div className="flex flex-row justify-between py-2 items-center">
           {/* Company logo */}
@@ -35,7 +35,7 @@ const MobileNavMenu = ({ navbar, closeSelf }) => {
             {navbar.links.map((navLink, index) => (
               <li key={`navLinkKey${index}`} className="block w-full">
                 <CustomLink link={navLink}>
-                  <div className="hover:text-gray-900 py-6 flex flex-row justify-between items-center">
+                  <div className="hover:text-gray-200 py-6 flex flex-row justify-between items-center">
                     <span>{navLink.text}</span>
                     <MdChevronRight className="h-8 w-auto" />
                   </div>
@@ -43,10 +43,10 @@ const MobileNavMenu = ({ navbar, closeSelf }) => {
               </li>
             ))}
           </ul>
-          <ButtonLink
+          {navbar.button && <ButtonLink
             button={navbar.button}
             appearance={getButtonAppearance(navbar.button.type, "light")}
-          />
+          />}
         </div>
       </div>
     </div>

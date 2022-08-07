@@ -16,9 +16,9 @@ const WhatsAppButton = props => {
 	const url = 'https://' + whatsappInterface + '.whatsapp.com/send?phone=';
 	return (
 		<div className='z-30'>
-			<div className="fixed bottom-24 right-5">
+			<div className="fixed bottom-10 right-5">
 				<button
-					className='w-[90px]'
+					className='w-[80px]'
 					type="button"
 					key="menu-button"
 					aria-expanded="true"
@@ -30,12 +30,12 @@ const WhatsAppButton = props => {
 				</button>
 			</div>
 			{buttonIsClicked && (
-				<div className="rounded bg-white p-3 flex flex-col fixed bottom-52 right-5 border shadow-lg shadow-black">
+				<div className="rounded bg-white p-3 flex flex-col fixed bottom-36 right-5 border shadow-lg shadow-black">
 					{contatos &&
 						contatos.map((contato) => (
 							<a
 								key={contato.id}
-								className="rounded-full bg-green-500 hover:bg-green-600 py-1 px-6 text-white text-lg flex my-2"
+								className="rounded-full bg-green-700 hover:bg-green-600 py-1 px-6 text-white text-lg flex my-2"
 								href={
 									url +
 									contato.fone +

@@ -2,9 +2,9 @@ export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 export const metaTitleSuffix = 'Bragheto Embalagens de Madeira';
 export const metadata = {
 	twitterCardType: 'summary_large_image',
-	metaTitle: 'Embalagens de Madeira Fumigada',
+	metaTitle: 'Paletes de Madeira Fumigada',
 	metaDescription:
-		'Caixas, Engradados, Paletes e Embalagens de Madeira Fumigada para Transporte e Exportação.',
+		'Paletes, Estrados, Engradados e Embalagens de Madeira Fumigada para Transporte e Exportação.',
 	twitterUsername: '@braghetopaletes',
 	shareImage: {
 		name: 'logomarca-bragheto.webp',
@@ -56,8 +56,7 @@ export const metadata = {
 	}
 };
 export const notificationBanner = {
-	type: 'info',
-	text: 'Este site faz uso de cookies para obter dados apenas da sua navegação em nosso site para melhorar sua experiência.'
+	text: 'Este site usa Cookies para melhorar a sua experiência de navegação .'
 };
 export const navbar = {
 	links: [
@@ -126,28 +125,31 @@ export const footer = {
 			]
 		},
 		{
-			title: 'Ribeirão Preto SP',
+			title: 'Contatos',
 			links: [
 				{
 					newTab: false,
-					url: 'tel:+5516982550729',
-					text: '(16) 98255-0729 Renato'
+					url: 'tel:+551636284114',
+					text: '(16) 3628-4114 Marco Aurélio (Vendas)'
 				},
 				{
 					newTab: false,
-					url: 'tel:+5516997655543',
-					text: '(16) 99765-5543 Jesuilla'
+					url: 'tel:+5516988029535',
+					text: '(16) 98802-9535 Daniela (Administrativo)'
+				},
+				{
+					newTab: false,
+					url: 'mailto:contato@braghetopaletes.com.br',
+					text: 'contato@bragheto...'
 				}
 			]
 		},
 		{
-			title: 'São Paulo SP',
-			links: [
-				{
-					newTab: false,
-					url: 'tel:+5511982843965',
-					text: '(11) 98284-3965 Cláudia'
-				}
+			title: 'Localização',
+			descriptions: [
+				"Rua Dr. Francisco Gugliano, 347",
+				"Parque Industrial Tanquinho",
+				"Ribeirão Preto SP"
 			]
 		},
 		{
@@ -164,47 +166,25 @@ export const footer = {
 	logo: {
 		name: 'fumigacao.webp',
 		alternativeText: 'Marcação Fumigação NIMF-15',
-		ext: '.webp',
-		mime: 'image/webp',
-		size: 1.17,
 		width: 155,
-		height: 79,
-		url: `${baseUrl}/images/certificacao_min.webp`
+		height: 79
 	}
-};
-export const favicon = {
-	name: 'logomarca-bragheto.webp',
-	alternativeText: 'Favicon Bragheto',
-	ext: '.webp',
-	mime: 'image/webp',
-	size: 0.63,
-	width: 45,
-	height: 45,
-	url: `${baseUrl}/images/logomarca-bragheto.webp`
 };
 export const whatsappContacts = [
 	{
-		nome: 'Jesuila - Comercial - Ribeirão Preto',
-		fone: '+5516997655543'
+		nome: 'Marco Aurélio - Comercial',
+		fone: '+551636284114'
 	},
 	{
-		nome: 'Cláudia - Comercial - São Paulo',
-		fone: '+5511982843965'
-	},
-	{
-		nome: 'Renato - Administrativo - Ribeirão Preto',
-		fone: '+5516982550729'
+		nome: 'Daniela - Administrativo',
+		fone: '+5516988029535'
 	}
 ];
 export const whatsappImage = {
 	name: 'logotipo_whatsapp_512x512.png',
 	alternativeText: '',
-	ext: '.png',
-	mime: 'image/png',
-	size: 87.03,
 	width: 512,
 	height: 512,
-	url: `${baseUrl}/images/logotipo_whatsapp_512x512.png`,
 	formats: {
 		thumbnail: {
 			name: 'thumbnail_logotipo_whatsapp_512x512.png',
@@ -226,7 +206,5 @@ export const whatsappImage = {
 		}
 	}
 };
-export const msg =
-	'Olá, visitei o site da Bragheto e gostaria de mais informações...';
 export const whatsappMsg =
-	'Olá, visitei o site da Bragheto e gostaria de mais informações...';
+	'Olá, visitei o site da Bragheto Paletes e gostaria de mais informações...';

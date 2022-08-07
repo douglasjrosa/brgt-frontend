@@ -1,26 +1,13 @@
-import Markdown from 'react-markdown';
-import classNames from 'classnames';
 import { MdClose } from 'react-icons/md';
 
-const NotificationBanner = ({ data: { text, type }, closeSelf }) => {
+const NotificationBanner = ({ data: { text }, closeSelf }) => {
 	return (
 		<div
 			id="notification-banner"
-			className={classNames(
-				// Common classes
-				'text-white px-2 fixed w-full z-40 py-8 bg-opacity-90 bottom-0',
-				{
-					// Apply theme based on notification type
-					'bg-gray-900': type === 'info',
-					'bg-yellow-600': type === 'warning',
-					'bg-red-600': type === 'alert'
-				}
-			)}
+			className="text-yellow-300 px-2 fixed w-full z-40 py-5 bg-opacity-90 bottom-0 bg-black"
 		>
 			<div className="container flex flex-row justify-between items-center ">
-				<div className="rich-text-banner flex-1 leading-relaxed text-2xl">
-					<Markdown children={text} />
-				</div>
+				<p className="text-xl">{text}</p>
 				<button
 					onClick={closeSelf}
 					className="px-1 py-1 flex-shrink-0"

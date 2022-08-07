@@ -15,9 +15,10 @@ module.exports = {
 				}
 			},
 			backgroundImage: (theme) => ({
-				'brgt-wood': "url('/images/wood-min.webp')",
+				'brgt-wood': "url('/images/wood-pannel.webp')",
 				'brgt-repeat': "url('/images/paletes-repeat.webp')",
-				'brgt-paletes': "url('/images/paletes-0.webp')"
+				'brgt-forest': "url('/images/forest.webp')",
+				'brgt-paletes': "url('/images/warehouse-shelves.webp')"
 			})
 		},
 		screens: {

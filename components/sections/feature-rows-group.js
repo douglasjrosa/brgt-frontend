@@ -1,18 +1,12 @@
 import classNames from 'classnames';
 import CustomLink from '@/components/elements/custom-link';
 import TextHeader from '@/components/elements/text-header';
-import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 
 const Image = dynamic(() => import('/components/elements/image'));
 const Markdown = dynamic(() => import('react-markdown'));
 
 const FeatureRowsGroup = ({ data }) => {
-	const [screenWidth, setScreenWidth] = useState();
-
-	useEffect(() => {
-		setScreenWidth(window.innerWidth);
-	}, []);
 
 	var joinNextRow = false;
 	return (
@@ -23,7 +17,7 @@ const FeatureRowsGroup = ({ data }) => {
 						key={`feature${index}`}
 						className={classNames(
 							// Common classes
-							'flex flex-col justify-center md:p-8 sm:items-center bg-white md:gap-10 shadow-lg',
+							'flex flex-col-reverse justify-center md:p-8 sm:items-center bg-black bg-opacity-70 md:gap-10 shadow-lg',
 							{ 'rounded-t-lg': !joinNextRow },
 							{ 'rounded-b-lg mb-16': !feature.joinNextRow },
 							{
@@ -34,26 +28,22 @@ const FeatureRowsGroup = ({ data }) => {
 					>
 						{/* Media section */}
 						<div className="w-full lg:w-4/12">
-							{/* Images */}
-							{(index > 1 ||
-								(1 || screenWidth && screenWidth > 767)) && (
-								<Image
-									media={feature.media}
-									className={classNames(
-										'object-cover h-auto md:rounded-md',
-										{ 'rounded-t-md': !joinNextRow }
-									)}
-									width={feature.mediaWidth}
-									height={feature.mediaHeight}
-									priority={index < 1}
-								/>
-							)}
+							<Image
+								media={feature.media}
+								className={classNames(
+									'object-cover h-auto md:rounded-md',
+									{ 'rounded-b-md': !joinNextRow }
+								)}
+								width={feature.mediaWidth}
+								height={feature.mediaHeight}
+								priority={index < 1}
+							/>
 						</div>
 						{/* Text section */}
-						<div className="w-full lg:w-6/12 text-lg p-5">
+						<div className="w-full tracking-wide text-black lg:w-8/12 text-lg p-5 bg-white border-2 border-yellow-500 p-4 rounded" >
 							<TextHeader
 								heading={index}
-								className="text-4xl py-6"
+								className="text-4xl font-bold py-6 text-black"
 							>
 								{feature.title}
 							</TextHeader>
