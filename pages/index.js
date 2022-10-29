@@ -27,7 +27,7 @@ const data = {
 		},
 		{
 			joinNextRow: false,
-			title: 'Produzimos Paltes Padrão e Especiais',
+			title: 'Produzimos Paletes Padrão e Especiais',
 			description:
 				'Além das medidas padrão 1,20m x 1,00m que são os mais usados, também produzimos paletes e estrados especiais conforme a sua necessidade.',
 			link: null,

@@ -130,7 +130,7 @@ export const footer = {
 				{
 					newTab: false,
 					url: 'tel:+551636284114',
-					text: '(16) 3628-4114 Marco Aurélio (Vendas)'
+					text: '(16) 3628-4114 Virgínia (Vendas)'
 				},
 				{
 					newTab: false,
@@ -147,9 +147,9 @@ export const footer = {
 		{
 			title: 'Localização',
 			descriptions: [
-				"Rua Dr. Francisco Gugliano, 347",
-				"Parque Industrial Tanquinho",
-				"Ribeirão Preto SP"
+				'Rua Dr. Francisco Gugliano, 347',
+				'Parque Industrial Tanquinho',
+				'Ribeirão Preto SP'
 			]
 		},
 		{
@@ -172,7 +172,7 @@ export const footer = {
 };
 export const whatsappContacts = [
 	{
-		nome: 'Marco Aurélio - Comercial',
+		nome: 'Virgínia - Comercial',
 		fone: '+551636284114'
 	},
 	{
