@@ -129,8 +129,8 @@ export const footer = {
 			links: [
 				{
 					newTab: false,
-					url: 'tel:+551636284114',
-					text: '(16) 3628-4114 Virgínia (Vendas)'
+					url: 'tel:+5516996035543',
+					text: '(16) 99603-5543 Virgínia (Vendas)'
 				},
 				{
 					newTab: false,
@@ -173,7 +173,7 @@ export const footer = {
 export const whatsappContacts = [
 	{
 		nome: 'Virgínia - Comercial',
-		fone: '+551636284114'
+		fone: '+5516996035543'
 	},
 	{
 		nome: 'Daniela - Administrativo',

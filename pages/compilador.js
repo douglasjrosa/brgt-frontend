@@ -52,7 +52,9 @@ export default () => {
 		alert(
 			'Linhas copiadas com sucesso. Vá para a planilha "Pedidos" no arquivo "PEDIDOS ALLIAGE 2022", na coluna "A", selecione a primeira célula vazia logo abaixo da última célula não vazia e pressione Ctrl + Shift + V.'
 		);
-	}
+	};
+
+	const email = 'contato@ribermax.com.br';
 
 	return (
 		<div style={{ padding: '50px', marginTop: '100px' }}>
@@ -60,9 +62,26 @@ export default () => {
 				type="text"
 				placeholder="Cole o texto do PDF aqui."
 				onChange={loadIt}
-				style={{ border: '1px solid #46b5ff', padding: "10px", margin: "10px", color: "#46b5ff", borderRadius: "5px" }}
+				style={{
+					border: '1px solid #46b5ff',
+					padding: '10px',
+					margin: '10px',
+					color: '#46b5ff',
+					borderRadius: '5px'
+				}}
 			/>
-			<button style={{padding: "10px", margin: "10px", backgroundColor: "#46b5ff", borderRadius: "5px", color: "white"}} onClick={copyIt} >Copiar</button>
+			<button
+				style={{
+					padding: '10px',
+					margin: '10px',
+					backgroundColor: '#46b5ff',
+					borderRadius: '5px',
+					color: 'white'
+				}}
+				onClick={copyIt}
+			>
+				Copiar
+			</button>
 			<div id="copyArea">
 				{table.map((item, index) => {
 					return (
@@ -74,4 +93,4 @@ export default () => {
 			</div>
 		</div>
 	);
-}
+};
