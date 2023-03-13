@@ -16,8 +16,9 @@ export default () => {
         cliente = cliente ? cliente.groups.result : "";
 
 		const data = txt.match(
-			/(?<=\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2} )(?<result>\d{2}\/\d{2}\/\d{4})/
-		).groups.result;
+			/(?<=(\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2})|(\d{3}\.\d{3}\.\d{3}-\d{2}) )(?<result>\d{2}\/\d{2}\/\d{4})/
+		);
+        data = data ? data.groups.result : "";
 
 		const vencimento = txt.match(
 			/(?<=RESERVADO AO FISCO.*enc\.\: )(?<result>\d{2}\/\d{2}\/\d{2}(\d{2})?)/
@@ -44,14 +45,15 @@ export default () => {
 		}
 
         setLine([
+            'Vendas',
             nfe,
-            '',
             '',
             cliente,
             data,
             vencimento,
             valor,
             status,
+            '',
             obs
         ]);
 	};
