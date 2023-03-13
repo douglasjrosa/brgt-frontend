@@ -12,8 +12,8 @@ export default () => {
 				.groups.result.replace(/\./g, '')
 		);
 
-		const cliente = txt.match(/(?<=UF INSCRIÇÃO ESTADUAL )(?<result>\w+)\s/)
-			.groups.result;
+		const cliente = txt.match(/(?<=FAX UF INSCRIÇÃO ESTADUAL )(?<result>[^\s]+)/);
+        cliente = cliente ? cliente.groups.result : "";
 
 		const data = txt.match(
 			/(?<=\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2} )(?<result>\d{2}\/\d{2}\/\d{4})/
@@ -24,6 +24,9 @@ export default () => {
 		);
 		vencimento = vencimento ? vencimento.groups.result : '';
 
+        const isento = txt.match(/EMBALAGEM RETORNAVEL/);
+        isento = isento && isento[0] == "EMBALAGEM RETORNAVEL";
+
 		const valor = txt.match(
 			/(?<result>\d+?\.?\d?\d?\d?\,\d{2})(?=.* CÓDIGO DESCRIÇÃO)/
 		);
@@ -32,7 +35,7 @@ export default () => {
         const status = "";
         const obs = "";
 
-		if (!vencimento) {
+		if (isento) {
 			const obsValor = parseFloat(valor.replace(/\./g, ''));
 
 			status = 'OK';
