@@ -58,7 +58,12 @@ export default () => {
 
 	return (
 		<div style={{ padding: '50px', marginTop: '100px' }}>
+			<label for="text">
+				<b>Texto do PEDIDO:</b>
+			</label>
+			<br />
 			<input
+				id="text"
 				type="text"
 				placeholder="Cole o texto do PDF aqui."
 				onChange={loadIt}
