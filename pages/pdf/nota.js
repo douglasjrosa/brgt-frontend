@@ -21,12 +21,36 @@ export default () => {
 
 		const vencimento = txt.match(
 			/(?<=RESERVADO AO FISCO.*enc\.\: )(?<result>\d{2}\/\d{2}\/\d{2}(\d{2})?)/
-		).groups.result;
+		);
+		vencimento = vencimento ? vencimento.groups.result : '';
 
-		const valor = txt.match(/(?<=alor(.)?\: )(?<result>[\d.,]+)\s[A-z]/)
-			.groups.result;
+		const valor = txt.match(
+			/(?<result>\d+?\.?\d?\d?\d?\,\d{2})(?=.* CÓDIGO DESCRIÇÃO)/
+		);
+		valor = valor ? valor.groups.result : '0,00';
 
-		setLine([nfe, '', '', cliente, data, vencimento, valor]);
+        const status = "";
+        const obs = "";
+
+		if (!vencimento) {
+			const obsValor = parseFloat(valor.replace(/\./g, ''));
+
+			status = 'OK';
+			obs = 'REMESSA - ' + obsValor / 500 + ' caixas - ' + obsValor +",00";
+			valor = '0,00';
+		}
+
+        setLine([
+            nfe,
+            '',
+            '',
+            cliente,
+            data,
+            vencimento,
+            valor,
+            status,
+            obs
+        ]);
 	};
 
 	const copyIt = () => {
@@ -70,7 +94,11 @@ export default () => {
 				Copiar
 			</button>
 			<div id="copyArea">
-				<pre>{line.length > 0 ? `${line[0]}	${line[1]}	${line[2]}	${line[3]}	${line[4]}	${line[5]}	${line[6]}` : ""}</pre>
+				<pre>
+					{line.length > 0
+						? `${line[0]}	${line[1]}	${line[2]}	${line[3]}	${line[4]}	${line[5]}	${line[6]}	${line[7]}	${line[8]}`
+						: ''}
+				</pre>
 			</div>
 		</div>
 	);
