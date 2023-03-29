@@ -134,11 +134,6 @@ export const footer = {
 				},
 				{
 					newTab: false,
-					url: 'tel:+5516988029535',
-					text: '(16) 98802-9535 Daniela (Administrativo)'
-				},
-				{
-					newTab: false,
 					url: 'mailto:contato@braghetopaletes.com.br',
 					text: 'contato@bragheto...'
 				}
@@ -175,10 +170,6 @@ export const whatsappContacts = [
 		nome: 'Virgínia - Comercial',
 		fone: '+5516996035543'
 	},
-	{
-		nome: 'Daniela - Administrativo',
-		fone: '+5516988029535'
-	}
 ];
 export const whatsappImage = {
 	name: 'logotipo_whatsapp_512x512.png',
