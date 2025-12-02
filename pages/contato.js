@@ -14,11 +14,11 @@ const data = {
 			joinNextRow: false,
 			title: 'Entre em contato para pedir um orçamento',
 			description:
-				'Ligue agora para **[(16) 99603-5543](tel:+5516996035543)** e peça um orçamento.  Se preferir envie um e-mail no link abaixo:',
+				'Ligue agora para **[(16) 98255-0729](tel:+5516982550729)** e peça um orçamento.  Se preferir envie um e-mail no link abaixo:',
 			link: {
 				newTab: true,
-				url: 'mailto:contato@braghetopaletes.com.br',
-				text: 'contato@braghetopaletes.com.br'
+				url: 'mailto:bragheto.paletes@gmail.com',
+				text: 'bragheto.paletes@gmail.com'
 			},
 			media: {
 				name: 'executive-calling.jpg',

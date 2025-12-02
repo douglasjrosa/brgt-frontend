@@ -129,21 +129,21 @@ export const footer = {
 			links: [
 				{
 					newTab: false,
-					url: 'tel:+5516996035543',
-					text: '(16) 99603-5543 Virgínia (Vendas)'
+					url: 'tel:+5516982550729',
+					text: '(16) 98255-0729 Renato (Vendas)'
 				},
 				{
 					newTab: false,
-					url: 'mailto:contato@braghetopaletes.com.br',
-					text: 'contato@bragheto...'
+					url: 'mailto:bragheto.paletes@gmail.com',
+					text: 'bragheto.paletes@gmail.com'
 				}
 			]
 		},
 		{
 			title: 'Localização',
 			descriptions: [
-				'Rua Dr. Francisco Gugliano, 347',
-				'Parque Industrial Tanquinho',
+				'Rua Campinas, 1862',
+				'Bairro Vila Elisa',
 				'Ribeirão Preto SP'
 			]
 		},
@@ -167,8 +167,8 @@ export const footer = {
 };
 export const whatsappContacts = [
 	{
-		nome: 'Virgínia - Comercial',
-		fone: '+5516996035543'
+		nome: 'Renato - Comercial',
+		fone: '+5516982550729'
 	},
 ];
 export const whatsappImage = {
