@@ -129,13 +129,13 @@ export const footer = {
 			links: [
 				{
 					newTab: false,
-					url: 'tel:+5516982550729',
-					text: '(16) 98255-0729 Renato (Vendas)'
+					url: 'tel:+5516988027089',
+					text: '(16) 98802-7089 - Atendimento Comercial'
 				},
 				{
 					newTab: false,
-					url: 'mailto:bragheto.paletes@gmail.com',
-					text: 'bragheto.paletes@gmail.com'
+					url: 'mailto:contato@braghetopaletes.com.br',
+					text: 'contato@braghetopaletes.com.br'
 				}
 			]
 		},
@@ -167,8 +167,8 @@ export const footer = {
 };
 export const whatsappContacts = [
 	{
-		nome: 'Renato - Comercial',
-		fone: '+5516982550729'
+		nome: 'Atendimento Comercial',
+		fone: '+5516988027089'
 	},
 ];
 export const whatsappImage = {
