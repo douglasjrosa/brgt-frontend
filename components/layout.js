@@ -11,8 +11,7 @@ const WhatsAppButton = dynamic(() => import('./elements/whatsapp-button'), {
 import {
 	notificationBanner,
 	whatsappImage,
-	whatsappContacts,
-	whatsappMsg
+	whatsappLink
 } from 'data/global';
 
 const Layout = ({ children }) => {
@@ -27,11 +26,10 @@ const Layout = ({ children }) => {
 				<div className="relative z-10">{children}</div>
 			</div>
 			<Footer />
-			{whatsappImage && whatsappContacts.length && whatsappMsg && (
+			{whatsappImage && whatsappLink && (
 				<WhatsAppButton
 					media={whatsappImage}
-					contatos={whatsappContacts}
-					msg={whatsappMsg}
+					whatsappLink={whatsappLink}
 				/>
 			)}
 			{notificationBanner && bannerIsShown && (

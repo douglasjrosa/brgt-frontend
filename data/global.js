@@ -165,12 +165,9 @@ export const footer = {
 		height: 79
 	}
 };
-export const whatsappContacts = [
-	{
-		nome: 'Atendimento Comercial',
-		fone: '+5516988027089'
-	},
-];
+
+export const whatsappLink = 'http://ribermax.com?token=78ayfaof8778w47fFDsifg8g_SSDasf-s&company=2&cta=17';
+
 export const whatsappImage = {
 	name: 'logotipo_whatsapp_512x512.png',
 	alternativeText: '',
@@ -197,5 +194,3 @@ export const whatsappImage = {
 		}
 	}
 };
-export const whatsappMsg =
-	'Olá, visitei o site da Bragheto Paletes e gostaria de mais informações...';
