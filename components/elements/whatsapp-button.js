@@ -12,7 +12,7 @@ const WhatsAppButton = props =>
 	{
 		if ( buttonIsClicked && whatsappLink )
 		{
-			window.location.href = whatsappLink
+			window.open( whatsappLink, '_blank' )
 		}
 	}, [ buttonIsClicked, whatsappLink ] )
 
