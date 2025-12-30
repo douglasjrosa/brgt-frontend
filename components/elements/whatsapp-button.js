@@ -1,5 +1,4 @@
 import Image from './image'
-import { isMobileCheck } from 'utils/is-mobile'
 import { useState, useEffect } from 'react'
 
 
