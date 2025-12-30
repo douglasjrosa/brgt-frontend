@@ -166,7 +166,7 @@ export const footer = {
 	}
 };
 
-export const whatsappLink = 'http://ribermax.com?token=78ayfaof8778w47fFDsifg8g_SSDasf-s&company=2&cta=17';
+export const whatsappLink = 'http://ribermax.com/redirects?token=78ayfaof8778w47fFDsifg8g_SSDasf-s&company=2&cta=17';
 
 export const whatsappImage = {
 	name: 'logotipo_whatsapp_512x512.png',
